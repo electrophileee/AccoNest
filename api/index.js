@@ -104,16 +104,7 @@ app.post('/api/logout', (req, res) => {
 });
 
 
-// app.post('/api/upload-by-link', async (req,res) => {
-//   const {link} = req.body;
-//   const newName = 'photo' + Date.now() + '.jpg';
-//   await imageDownloader.image({
-//     url: link,
-//     dest: '/tmp/' +newName,
-//   });
-//   const url = await uploadToS3('/tmp/' +newName, newName, mime.lookup('/tmp/' +newName));
-//   res.json(url);
-// });
+
 app.post('/api/upload-by-link', async (req, res) => {
 
   try {
