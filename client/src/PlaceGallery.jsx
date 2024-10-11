@@ -51,7 +51,7 @@ export default function PlaceGallery({ place }) {
             <img
               onClick={() => setShowAllPhotos(true)}
               className="aspect-square cursor-pointer object-cover"
-              src={"http://localhost:4000/uploads/" + place.photos[1]}
+              src={"/api/uploads/" + place.photos[1]}
               alt="photo"
             />
           )}
